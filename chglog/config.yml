@@ -2,25 +2,26 @@ style: github
 template: CHANGELOG.tpl.md
 info:
   title: CHANGELOG
-  #  repository_url: https://git.psu.edu/eit/terraform-modules/tf-aws-admin
+  repository_url: ""
 options:
   commits:
-    # filters:
-    #   Type:
-    #     - feat
-    #     - fix
-    #     - perf
-    #     - refactor
+#    filters:
+#      Type:
+#        - feat
+#        - fix
+#        - perf
+#        - refactor
+#        - ci
   commit_groups:
-    # title_maps:
-    #   feat: Features
-    #   fix: Bug Fixes
-    #   perf: Performance Improvements
-    #   refactor: Code Refactoring
+    title_maps:
+#      feat: Features
+#      fix: Bug Fixes
+#      perf: Performance Improvements
+#      refactor: Code Refactoring
+#      ci: CI
   header:
-    pattern: "^(\\w*)\\:\\s(.*)$"
+    pattern: "^(.*)$"
     pattern_maps:
-      - Type
       - Subject
   notes:
     keywords:
