@@ -42,7 +42,7 @@ RUN curl -LO "https://github.com/weaveworks/flux/releases/download/${FLUX_VERSIO
  ## git-chglog
  && curl -LO "https://github.com/git-chglog/git-chglog/releases/download/${GIT_CHGLOG_VERSION}/git-chglog_linux_amd64" \
  && chmod +x git-chglog_linux_amd64 \
- && mv git-chglog_linux_amd64 /usr/local/bin/git-chglog
+ && mv git-chglog_linux_amd64 /usr/local/bin/git-chglog \
  ## chmod
  && chmod +x /usr/local/bin/*
 
