@@ -5,9 +5,8 @@ info:
   repository_url: ""
 options:
   commits:
-#    filters:
+    filters:
 #      Type:
-#        - feat
 #        - fix
 #        - perf
 #        - refactor

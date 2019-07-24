@@ -1,20 +1,15 @@
-# CHANGELOG
-
-{{ if .Versions }}
+{{ if .Versions -}}
+{{ if .Unreleased.Commits -}}
 <a name="unreleased"></a>
 ## [Unreleased]
 
-{{ if .Unreleased.CommitGroups -}}
-{{ range .Unreleased.CommitGroups -}}
-### {{ .Title }}
-{{ range .Commits -}}
-- {{ if .Scope }}**{{ .Scope }}:** {{ end }}{{ .Subject }}
+{{ range .Unreleased.Commits -}}
+* {{ .Subject }}
 {{ end }}
-{{ end -}}
-{{ end -}}
-{{ end -}}
 
-{{ range .Versions }}
+{{ end -}}
+{{ end -}}
+{{- range .Versions }}
 <a name="{{ .Tag.Name }}"></a>
 ## {{ if .Tag.Previous }}[{{ .Tag.Name }}]({{ $.Info.RepositoryURL }}/compare/{{ .Tag.Previous.Name }}...{{ .Tag.Name }}){{ else }}{{ .Tag.Name }}{{ end }} ({{ datetime "2006-01-02" .Tag.Date }})
 
