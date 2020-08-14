@@ -13,7 +13,7 @@ RUN apk update \
     curl \
     git \
     bash \
-    py2-pip \
+    py3-pip \
     openssh-client \
  && rm -fr /var/lib/apk/*
  
