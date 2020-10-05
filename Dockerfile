@@ -9,6 +9,7 @@ ENV YAMLLINT_VERSION=1.15.0
 RUN apk update \
  && apk upgrade \
  && apk --no-cache add \
+    grep \
     gawk \
     curl \
     git \
